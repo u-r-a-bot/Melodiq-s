@@ -3,7 +3,7 @@ from pathlib import Path
 
 UPLOAD_AUDIO_FOLDER = "static/uploaded_audio"
 UPLOAD_IMAGE_FOLDER = "static/uploaded_images"
-
+AUDIO_DIRECTORY = "uploaded_audio"
 # Ensure upload folders exist
 Path(UPLOAD_AUDIO_FOLDER).mkdir(parents=True, exist_ok=True)
 Path(UPLOAD_IMAGE_FOLDER).mkdir(parents=True, exist_ok=True)
