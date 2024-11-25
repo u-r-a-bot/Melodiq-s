@@ -11,7 +11,15 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
-
+st.markdown(
+    r"""
+    <style>
+    .stDeployButton {
+            visibility: hidden;
+        }
+    </style>
+    """, unsafe_allow_html=True
+)
 # Playback State
 if "current_audio" not in st.session_state:
     st.session_state.current_audio = None
